@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}",
+                "/home/ch816772/CGAL-4.13/include",
+                "/home/chris/CGAL-4.13/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE"
+            ],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "/home/ch816772/CGAL-4.13/include",
+                    "/home/chris/CGAL-4.13/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+            
+        }
+    ],
+    "version": 4
+}
