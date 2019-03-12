@@ -8,20 +8,21 @@
 #include <CGAL/Simple_cartesian.h>
 #include <CGAL/Surface_mesh.h>
 #include <CGAL/license/Polyhedron.h>
-#include <CGAL/Polygon_mesh_processing/detect_features.h>
-#include <CGAL/Polygon_mesh_processing/remesh.h>
-#include <CGAL/Polygon_mesh_processing/transform.h>
-#include <CGAL/Polygon_mesh_processing/polygon_soup_to_polygon_mesh.h>
+//#include <CGAL/Polygon_mesh_processing/detect_features.h>
+//#include <CGAL/Polygon_mesh_processing/remesh.h>
+//#include <CGAL/Polygon_mesh_processing/transform.h>
+//#include <CGAL/Polygon_mesh_processing/polygon_soup_to_polygon_mesh.h>
 
 // local
 #include "STL_writer.h"
 
+template<class K>
 class STL_manager
 {
-    typedef CGAL::Simple_cartesian<double> Kernel;
-    typedef CGAL::Surface_mesh<Kernel::Point_3> Surface_Mesh;
+    typedef CGAL::Surface_mesh<K> Surface_Mesh;
 
   public:
+  /*
     bool import_STL(const std::string &file, Surface_Mesh &mesh)
     {
         typedef CGAL::Simple_cartesian<double> Kernel;
@@ -56,6 +57,7 @@ class STL_manager
         }
         return false;
     }
+    */
     bool export_STL(const std::string &file, const Surface_Mesh &mesh)
     {
         std::cout << "Writing new mesh to " << file << " ...\n";
