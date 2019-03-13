@@ -1,0 +1,4 @@
+Point and Normal cleanup
+If using the Level set interface tracking, move points to the interface.
+Else - select interface reconstruction method and move points.
+Convert Normal to unit vectors.
